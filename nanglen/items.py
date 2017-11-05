@@ -20,3 +20,6 @@ class MovieItem(Item):
     Genre = Field()
     Synopsis = Field()
     PosterUrl = Field()
+    LastOnAir = Field()
+    Actors = Field()
+    Director = Field()

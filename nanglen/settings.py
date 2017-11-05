@@ -64,9 +64,13 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'nanglen.pipelines.NanglenPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'nanglen.pipelines.MoviePipeline': 0,
+}
+
+MONGO_SERVER = "localhost"
+MONGO_PORT = 27017
+MONGO_DB = "nanglen"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
